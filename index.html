@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080808">
+<meta name="description" content="NEGM STORE - متجر شدات PUBG UC وحسابات ببجي">
+<title>NEGM STORE | شدات وحسابات PUBG</title>
+<style>
+:root{--bg:#070707;--panel:#101010;--panel2:#151515;--gold:#d9b27b;--gold2:#f3d7a5;--text:#f7f4ee;--muted:#a6a19a;--line:#2a2723;--green:#22c55e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}button,input,select{font:inherit}.container{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#080808ed;backdrop-filter:blur(14px);border-bottom:1px solid #24211d}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:1px}.logo{width:43px;height:43px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:13px;box-shadow:0 0 22px #d9b27b22}.brand span:last-child{font-size:19px}.navlinks{display:flex;gap:24px;color:#d1cbc2;font-size:14px}.navlinks a:hover{color:var(--gold)}.nav-actions{display:flex;gap:9px}.btn{border:1px solid var(--gold);background:var(--gold);color:#14100a;padding:11px 17px;border-radius:999px;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn.outline{background:transparent;color:var(--text);border-color:#47413a}.btn.small{padding:8px 13px;font-size:13px}
+.hero{padding:68px 0 48px;overflow:hidden;position:relative}.hero:before{content:"";position:absolute;width:430px;height:430px;border-radius:50%;background:#d9b27b0b;filter:blur(30px);top:-170px;left:-90px;pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:35px}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 13px;border:1px solid #4a3b2b;border-radius:999px;color:var(--gold2);font-size:13px;background:#d9b27b0c}.hero h1{font-size:clamp(36px,5vw,64px);line-height:1.17;margin:19px 0 14px;letter-spacing:-1.5px}.hero h1 em{font-style:normal;color:var(--gold)}.hero p{color:#bdb7ae;max-width:550px;margin:0 0 25px}.hero-buttons{display:flex;gap:11px;flex-wrap:wrap}.trust{display:flex;gap:20px;flex-wrap:wrap;margin-top:27px;color:#b5afa6;font-size:12px}.trust span:before{content:"✓";color:var(--gold);margin-left:7px;font-weight:bold}.hero-art{min-height:340px;border:1px solid #2a251e;border-radius:28px;background:radial-gradient(ellipse at 50% 35%,#49331b 0,#17110a 35%,#0c0c0c 70%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;box-shadow:0 25px 90px #000}.hero-art:before,.hero-art:after{content:"";position:absolute;border:1px solid #d9b27b3b;border-radius:50%;width:250px;height:250px;transform:rotate(30deg)}.hero-art:after{width:310px;height:310px;transform:rotate(-30deg)}.emblem{position:relative;z-index:1;width:190px;height:190px;transform:rotate(45deg);border:2px solid var(--gold);background:linear-gradient(135deg,#17110b,#3d2a15);box-shadow:0 0 45px #d9b27b2b;display:grid;place-items:center}.emblem-inner{transform:rotate(-45deg);text-align:center}.emblem strong{display:block;color:var(--gold2);font-size:30px;letter-spacing:2px}.emblem small{font-size:12px;letter-spacing:4px;color:#e8d4b4}.floating-tag{position:absolute;z-index:2;background:#111;border:1px solid #4d3b27;padding:8px 12px;border-radius:12px;color:#f0d4a4;font-size:12px}.tag-one{top:22px;right:20px}.tag-two{bottom:22px;left:20px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin:0 auto 62px}.stat{background:var(--panel);border:1px solid var(--line);border-radius:17px;text-align:center;padding:17px}.stat b{display:block;color:var(--gold);font-size:20px}.stat span{color:var(--muted);font-size:12px}
+section{padding:22px 0 52px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:22px}.section-head h2{font-size:clamp(24px,3vw,34px);margin:0}.section-head p{margin:5px 0 0;color:var(--muted);font-size:13px}.pill{border:1px solid #44392b;border-radius:999px;color:var(--gold2);padding:6px 11px;font-size:12px}
+.tabs{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:18px}.tab{background:#111;border:1px solid #2d2a26;color:#c8c1b8;padding:9px 15px;border-radius:999px;cursor:pointer}.tab.active{background:var(--gold);color:#17110a;border-color:var(--gold);font-weight:bold}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.product{background:linear-gradient(145deg,#151515,#0d0d0d);border:1px solid #2b2823;border-radius:20px;padding:16px;transition:.2s;min-width:0}.product:hover{transform:translateY(-4px);border-color:#6c5234}.product-visual{height:130px;border-radius:14px;background:radial-gradient(circle at 50% 40%,#69471e 0,#2b1d0d 45%,#111 78%);display:grid;place-items:center;margin-bottom:14px;position:relative;overflow:hidden}.uc-symbol{width:84px;height:84px;border:2px solid #e3bf80;transform:rotate(45deg);display:grid;place-items:center;background:linear-gradient(135deg,#2c1e0b,#8a632b);box-shadow:0 0 30px #d9b27b22}.uc-symbol span{transform:rotate(-45deg);font-size:25px;font-weight:900;color:#ffe3a8}.product h3{font-size:16px;margin:0 0 4px}.product .desc{font-size:12px;color:var(--muted);margin:0 0 14px;min-height:20px}.price-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:13px}.price{font-size:20px;font-weight:900;color:var(--gold2)}.currency{font-size:11px;color:var(--muted)}.product .btn{width:100%;font-size:13px;padding:10px}.account-art{height:140px;border-radius:14px;background:linear-gradient(135deg,#251a0e,#101010);display:grid;place-items:center;margin-bottom:13px;overflow:hidden;border:1px solid #32271a}.account-art span{font-size:40px;filter:drop-shadow(0 0 15px #d9b27b66)}.tag{font-size:10px;border:1px solid #5b462c;color:var(--gold2);border-radius:7px;padding:3px 7px;display:inline-block;margin-bottom:8px}
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.how{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:21px}.how .num{width:36px;height:36px;display:grid;place-items:center;border-radius:12px;background:#d9b27b19;color:var(--gold);font-weight:900;margin-bottom:10px}.how h3{margin:0 0 5px;font-size:16px}.how p{margin:0;color:var(--muted);font-size:13px}
+.contact{background:linear-gradient(110deg,#1b140c,#0f0f0f 65%);border:1px solid #453421;border-radius:24px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:20px}.contact h2{margin:0 0 5px}.contact p{margin:0;color:var(--muted);font-size:14px}.contact-actions{display:flex;gap:10px;flex-wrap:wrap}
+footer{border-top:1px solid #25221e;padding:25px 0;color:#888178;font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.modal-backdrop{position:fixed;inset:0;z-index:50;background:#000c;display:none;align-items:center;justify-content:center;padding:16px}.modal-backdrop.open{display:flex}.modal{width:min(460px,100%);background:#111;border:1px solid #493a28;border-radius:22px;padding:22px;box-shadow:0 20px 80px #000}.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.modal h3{margin:0}.close{background:#242424;border:0;color:#fff;border-radius:50%;width:34px;height:34px;cursor:pointer}.field{display:block;margin:12px 0}.field span{display:block;font-size:12px;color:#c5bdb2;margin-bottom:6px}.field input,.field select{width:100%;padding:12px;border-radius:10px;border:1px solid #39342d;background:#090909;color:#fff;outline:none}.field input:focus,.field select:focus{border-color:var(--gold)}.modal .btn{width:100%;margin-top:7px}.note{font-size:11px;color:#918a80;margin-top:10px}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-art{min-height:290px}.grid{grid-template-columns:repeat(2,1fr)}.navlinks{gap:12px}.navlinks a{font-size:12px}}
+@media(max-width:600px){.nav{height:65px}.navlinks{display:none}.brand span:last-child{font-size:16px}.nav-actions .outline{display:none}.hero{padding-top:42px}.hero-art{min-height:250px}.emblem{width:150px;height:150px}.stats{gap:7px;margin-bottom:42px}.stat{padding:12px 5px}.stat b{font-size:17px}.stat span{font-size:10px}.grid{gap:10px}.product{padding:10px;border-radius:16px}.product-visual{height:105px}.uc-symbol{width:67px;height:67px}.uc-symbol span{font-size:20px}.product h3{font-size:14px}.price{font-size:17px}.section-head{align-items:start;flex-direction:column}.how-grid{grid-template-columns:1fr}.contact{padding:22px;align-items:start;flex-direction:column}.footer-inner{flex-direction:column}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="NEGM STORE"><span class="logo">NS</span><span>NEGM <span style="color:var(--gold)">STORE</span></span></a>
+    <nav class="navlinks"><a href="#uc">شدات UC</a><a href="#accounts">حسابات ببجي</a><a href="#steps">طريقة الطلب</a><a href="#contact">تواصل معنا</a></nav>
+    <div class="nav-actions"><a class="btn outline small" href="#accounts">تصفح الحسابات</a><a class="btn small" href="#uc">اشتري UC ⚡</a></div>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+ <div class="container hero-grid">
+  <div>
+   <span class="eyebrow">✦ متجر شدات PUBG UC والحسابات</span>
+   <h1>قوّي لعبك مع<br><em>NEGM STORE</em></h1>
+   <p>شدات ببجي وحسابات مميزة في مكان واحد. اختار طلبك وابعت تفاصيله مباشرة على واتساب — بسرعة وسهولة.</p>
+   <div class="hero-buttons"><a class="btn" href="#uc">⚡ شراء شدات PUBG</a><a class="btn outline" href="#accounts">تصفح الحسابات ←</a></div>
+   <div class="trust"><span>طلب مباشر على واتساب</span><span>تفاصيل واضحة</span><span>دعم قبل الشراء</span></div>
+  </div>
+  <div class="hero-art"><span class="floating-tag tag-one">PUBG MOBILE • UC</span><div class="emblem"><div class="emblem-inner"><strong>NEGM</strong><small>STORE</small></div></div><span class="floating-tag tag-two">YOUR GAME. YOUR RULES.</span></div>
+ </div>
+</section>
+<div class="container stats">
+ <div class="stat"><b>UC</b><span>باقات شدات متنوعة</span></div><div class="stat"><b>ACCOUNTS</b><span>حسابات بتفاصيلها</span></div><div class="stat"><b>WhatsApp</b><span>تواصل واطلب بسهولة</span></div>
+</div>
+<section id="uc"><div class="container">
+ <div class="section-head"><div><h2>شدات PUBG <span style="color:var(--gold)">UC</span></h2><p>اختار الباقة المناسبة وابعت طلبك مباشرة.</p></div><span class="pill">باقات الشدات</span></div>
+ <div class="grid" id="uc-grid"></div>
+</div></section>
+<section id="accounts"><div class="container">
+ <div class="section-head"><div><h2>حسابات <span style="color:var(--gold)">ببجي</span></h2><p>نماذج جاهزة للتعديل — ضيف صور حساباتك وأسعارها الحقيقية.</p></div><span class="pill">حسابات مميزة</span></div>
+ <div class="grid" id="account-grid"></div>
+</div></section>
+<section id="steps"><div class="container">
+ <div class="section-head"><div><h2>إزاي تطلب؟</h2><p>ثلاث خطوات بسيطة لإرسال طلبك.</p></div></div>
+ <div class="how-grid"><div class="how"><div class="num">01</div><h3>اختار المنتج</h3><p>حدد باقة الشدات أو الحساب اللي عجبك.</p></div><div class="how"><div class="num">02</div><h3>اكتب بيانات الطلب</h3><p>اكتب رقم اللاعب أو اسم الحساب ووسيلة التواصل.</p></div><div class="how"><div class="num">03</div><h3>أكد مع المتجر</h3><p>هيتفتح واتساب برسالة جاهزة تراجعها وتبعتها.</p></div></div>
+</div></section>
+<section id="contact"><div class="container"><div class="contact"><div><h2>جاهز تطلب؟ <span style="color:var(--gold)">🔥</span></h2><p>راسل NEGM STORE للاستفسار عن الأسعار والتوافر.</p></div><div class="contact-actions"><a class="btn" id="whatsapp-link" href="#" target="_blank" rel="noopener">تواصل واتساب ↗</a><a class="btn outline" id="telegram-link" href="#" target="_blank" rel="noopener">تيليجرام ↗</a></div></div></div></section>
+</main>
+<footer><div class="container footer-inner"><span>© <span id="year"></span> NEGM STORE — جميع الحقوق محفوظة</span><span>متجر مستقل، غير تابع رسميًا للعبة PUBG MOBILE.</span></div></footer>
+<div class="modal-backdrop" id="order-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+ <div class="modal"><div class="modal-head"><h3 id="modal-title">إكمال الطلب</h3><button class="close" id="close-modal" aria-label="إغلاق">×</button></div>
+  <p id="selected-product" style="color:var(--gold2);margin:0 0 10px"></p>
+  <form id="order-form">
+   <label class="field"><span>اسمك (اختياري)</span><input id="customer-name" placeholder="اكتب اسمك"></label>
+   <label class="field"><span>Player ID / تفاصيل الحساب</span><input id="player-id" placeholder="اكتب ID اللاعب أو تفاصيل الطلب" required></label>
+   <label class="field"><span>وسيلة الدفع المفضلة</span><select id="payment"><option>فودافون كاش</option><option>إنستا باي</option><option>فوري</option><option>هنتفق على وسيلة الدفع</option></select></label>
+   <button class="btn" type="submit">إرسال الطلب على واتساب ↗</button>
+  </form><div class="note">لن يتم تحصيل أي مبلغ من خلال هذه الصفحة. راجع تفاصيل الطلب مع المتجر قبل الدفع.</div>
+ </div>
+</div>
+<script>
+/* عدّل المنتجات والأسعار ورقم واتساب واسم تيليجرام من هذا الجزء */
+const CONFIG = {
+  whatsapp: "201228134233",
+  telegram: "Mamdooh_Essam",
+  ucProducts: [
+    {name:"60 UC",desc:"باقة شدات صغيرة",price:50},
+    {name:"325 UC",desc:"باقة مناسبة للشراء السريع",price:240},
+    {name:"660 UC",desc:"باقة شدات",price:480},
+    {name:"1800 UC",desc:"باقة كبيرة",price:1200},
+    {name:"3850 UC",desc:"باقة مميزة",price:2250},
+    {name:"8100 UC",desc:"أكبر باقة",price:4400}
+  ],
+  accounts: [
+    {name:"حساب ببجي مميز",tag:"تفاصيل الحساب عند الطلب",desc:"أسلحة وملابس — أضف التفاصيل",price:"حسب التفاصيل",icon:"🎮"},
+    {name:"حساب نوادر",tag:"حساب مميز",desc:"أضف صور الحساب ومحتوياته",price:"حسب التفاصيل",icon:"👑"},
+    {name:"حساب أسلحة مطورة",tag:"أسلحة مطورة",desc:"اكتب مستويات الأسلحة هنا",price:"حسب التفاصيل",icon:"⚔️"},
+    {name:"حساب كلاسيك",tag:"اختيار مناسب",desc:"أضف مستوى الحساب والنوادر",price:"حسب التفاصيل",icon:"🛡️"}
+  ]
+};
+const money = n => Number(n).toLocaleString("ar-EG") + " ج.م";
+const ucGrid = document.getElementById("uc-grid");
+const accountGrid = document.getElementById("account-grid");
+let selected = null;
+function renderUC(){
+ ucGrid.innerHTML = CONFIG.ucProducts.map((p,i)=>`<article class="product"><div class="product-visual"><div class="uc-symbol"><span>${p.name.split(" ")[0]}</span></div></div><h3>${p.name}</h3><p class="desc">${p.desc}</p><div class="price-row"><span class="price">${money(p.price)}</span><span class="currency">جنيه مصري</span></div><button class="btn" data-type="uc" data-index="${i}">اطلب الباقة ←</button></article>`).join("");
+}
+function renderAccounts(){
+ accountGrid.innerHTML = CONFIG.accounts.map((p,i)=>`<article class="product"><div class="account-art"><span>${p.icon}</span></div><span class="tag">${p.tag}</span><h3>${p.name}</h3><p class="desc">${p.desc}</p><div class="price-row"><span class="price" style="font-size:16px">${p.price}</span></div><button class="btn" data-type="account" data-index="${i}">استفسر عن الحساب ←</button></article>`).join("");
+}
+function openOrder(type,index){
+ selected = type==="uc" ? CONFIG.ucProducts[index] : CONFIG.accounts[index];
+ selected.kind = type==="uc" ? "شدات PUBG UC" : "حساب ببجي";
+ document.getElementById("selected-product").textContent = selected.name + (type==="uc" ? " — "+money(selected.price) : " — "+selected.price);
+ document.getElementById("player-id").placeholder = type==="uc" ? "اكتب Player ID" : "اكتب أي تفاصيل أو استفسار عن الحساب";
+ document.getElementById("order-modal").classList.add("open");
+}
+document.addEventListener("click",e=>{const b=e.target.closest("button[data-type]");if(b)openOrder(b.dataset.type,Number(b.dataset.index));});
+document.getElementById("close-modal").onclick=()=>document.getElementById("order-modal").classList.remove("open");
+document.getElementById("order-modal").addEventListener("click",e=>{if(e.target.id==="order-modal")e.currentTarget.classList.remove("open")});
+document.getElementById("order-form").addEventListener("submit",e=>{
+ e.preventDefault();
+ const name=document.getElementById("customer-name").value.trim()||"غير محدد";
+ const details=document.getElementById("player-id").value.trim();
+ const payment=document.getElementById("payment").value;
+ const price=selected.kind==="شدات PUBG UC"?money(selected.price):selected.price;
+ const msg=`طلب جديد من موقع NEGM STORE%0Aالمنتج: ${encodeURIComponent(selected.name)}%0Aالنوع: ${encodeURIComponent(selected.kind)}%0Aالسعر: ${encodeURIComponent(price)}%0Aالاسم: ${encodeURIComponent(name)}%0APlayer ID / التفاصيل: ${encodeURIComponent(details)}%0Aوسيلة الدفع: ${encodeURIComponent(payment)}`;
+ window.open(`https://wa.me/${CONFIG.whatsapp}?text=${msg}`,"_blank","noopener");
+ document.getElementById("order-modal").classList.remove("open");
+});
+document.getElementById("whatsapp-link").href=`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent("السلام عليكم، عايز استفسر عن NEGM STORE")}`;
+document.getElementById("telegram-link").href=`https://t.me/${CONFIG.telegram}`;
+document.getElementById("year").textContent=new Date().getFullYear();
+renderUC();renderAccounts();
+</script>
+</body>
+</html>
